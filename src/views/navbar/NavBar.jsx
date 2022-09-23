@@ -5,15 +5,15 @@ import { Image, Container, Nav, Navbar } from 'react-bootstrap';
 
 // images
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import IconLogo from 'src/assets/brand/logo.png';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import IconLogo from 'src/assets/brand/logo.png';
 
 const NavBar = () => {
     return (
         <Navbar collapseOnSelect expand="lg">
             <Container>
                 <Navbar.Brand href="#concepts">
-                    <Image src={IconLogo} alt='Hola' width={300} height={80} />
+                    <Image src={IconLogo} alt='Logo' width={300} height={80} />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
