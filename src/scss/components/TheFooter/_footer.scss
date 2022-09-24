@@ -8,11 +8,11 @@
 
     .menu li {
         display: inline-block;
-        padding-right: 15vh;
+        padding-right: 14vh;
     }
 
     .menu li > a {
-        color: $color-celeste-light;
+        color: $color-celeste-dark;
         text-decoration: none !important;
         font-weight: bold;
     }
@@ -25,7 +25,7 @@
     }
 
     .contacto li .email{
-        color: $color-celeste-light;
+        color: $color-celeste-dark;
     }
 
 

@@ -5,11 +5,11 @@ import TheHeader from './TheHeader'
 
 const Layout = () => {
   return (
-    <div>
+    <React.Fragment>
       <TheHeader />
       <TheContent />
       <TheFooter/>
-    </div>
+    </React.Fragment>
   )
 }
 

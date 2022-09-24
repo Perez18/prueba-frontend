@@ -2,6 +2,8 @@ import React from 'react'
 
 // boostrap
 import { Col, Container, Row, Image } from 'react-bootstrap'
+
+// router
 import { Link } from 'react-router-dom'
 
 // icon/img
@@ -65,17 +67,17 @@ const TheFooter = () => {
                         <ul className='redes'>
                             <li>Follow us</li>
                             <li>
-                                <a href='https://twitter.com/conceptslife?lang=en' target='_blank'>
+                                <a href='https://twitter.com/conceptslife?lang=en' target='_blank'  rel="noreferrer">
                                     <Icofont icon="twitter" size="1" />
                                 </a>
                             </li>
                             <li>
-                                <a href='https://www.facebook.com/conceptslife/' target='_blank' >
+                                <a href='https://www.facebook.com/conceptslife/' target='_blank'  rel="noreferrer" >
                                     <Icofont icon="facebook" size="1" />
                                 </a>
                             </li>
                             <li>
-                                <a href='https://www.instagram.com/concepts_life/' target='_blank'>
+                                <a href='https://www.instagram.com/concepts_life/' target='_blank'  rel="noreferrer">
                                     <Icofont icon="instagram" size="1" />
                                 </a>
                             </li>
