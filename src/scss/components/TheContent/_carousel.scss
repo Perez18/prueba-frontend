@@ -1,0 +1,12 @@
+.carousel {
+    .banner {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vh;
+        height: 60vh;
+    }
+
+    .banner-one {
+        background-image: url(#{$assetsPath}/images/muebles.webp);
+    }
+}

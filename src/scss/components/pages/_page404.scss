@@ -1,0 +1,41 @@
+.page-404 {
+    padding: 40px;
+    img {
+        width: 100%;
+    }
+
+    // .four_zero_four_bg {
+    //     background-image: url(https://i0.wp.com/www.silocreativo.com/en/wp-content/uploads/2017/11/diseno-web-404-CSS.gif?resize=600%2C323&quality=100&strip=all&ssl=1);
+    //     height: 75vh;
+    //     background-position: center;
+    // }
+
+    h1,
+    h3 {
+        font-size: 80px;
+    }
+
+    .link-404 {
+        text-decoration: none;
+        color: #fff !important;
+        display: inline-block;
+    }
+
+    .content-404 {
+        p {
+            font-size: 16px;
+        }
+
+        button {
+            border: none;
+            background-color: $color-almond-dark;
+            border-radius: 0.5rem;
+            color: white;
+            padding: 10px 16px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+    }
+}
