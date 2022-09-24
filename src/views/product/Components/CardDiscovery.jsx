@@ -2,10 +2,14 @@ import React from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 
 // image/icon
-import blockgrey from 'src/assets/images/blockgrey.webp'
-import mesacopas from 'src/assets/images/mesacopas.webp'
+// import blockgrey from 'src/assets/images/vectorpaint.svg'
+import mesacopas from 'src/assets/images/mesacopas2.webp'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
+// protypes
 import PropTypes from 'prop-types'
+
 export const CardDiscovery = ({
     imageData
 }) => {
@@ -21,15 +25,15 @@ export const CardDiscovery = ({
                                 sm={6}
                                 md={4}
                                 lg={3}
-                                className={`${isArticle ? article?.background : ''}${!isImage && !isArticle ? 'bg-secondary d-inline':''}`}
+                                className={`${isArticle ? article?.background : ''} pt-1`}
                             >
                                 {
                                     isImage
                                     && (
-                                        <img
+                                        <Image
                                             src={src}
                                             alt={alt}
-                                            className='img-fluid'
+                                            fluid
                                         />
                                     )
                                 }
@@ -37,27 +41,25 @@ export const CardDiscovery = ({
                                 {
                                     isArticle
                                     && (
-                                        <div>
-                                            <h4>{article?.title}</h4>
-                                            <p>{article?.text}</p>
+                                        <div className='article'>
+                                            <h3 className='title'>{article?.title}</h3>
+                                            <p className='text'>{article?.text}</p>
+                                            <p className='helper'>{article?.helper} <FontAwesomeIcon icon={faArrowRight} /> </p>
                                         </div>
                                     )
 
                                 }
 
-                                {/* {
-                                    !isImage && !isArticle
+                                {
+                                    (!isImage && !isArticle)
                                     && (
-                                        <img
-                                            src={blockgrey}
-                                            alt='block'
-                                            className='img-fluid'
+                                        <Image
+                                            src='data:image/svg+xml;charset=UTF-8,<svg%20width%3D"285"%20height%3D"220"%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20viewBox%3D"0%200%20243%20160"%20preserveAspectRatio%3D"none"><defs><style%20type%3D"text%2Fcss">%23holder_1836dca6e78%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3Avar(--bs-font-sans-serif)%2C%20monospace%3Bfont-size%3A12pt%20%7D%20<%2Fstyle><%2Fdefs><g%20id%3D"holder_1836dca6e78"><rect%20width%3D"243"%20height%3D"160"%20fill%3D"%23373940"><%2Frect><g><text%20x%3D"91.765625"%20y%3D"86.3">243x160<%2Ftext><%2Fg><%2Fg><%2Fsvg>'
+                                            alt={alt}
+                                            fluid
                                         />
                                     )
-                                } */}
-
-
-
+                                }
                             </Col>
                         ))
 
@@ -79,10 +81,10 @@ CardDiscovery.defaultProps = {
         {
             isArticle: true,
             article: {
-                background: 'bg-warning',
+                background: 'bg-yellow-light',
                 title: 'Discover your true style',
-                text: 'Penatibus et magnis',
-                helper: ''
+                text: 'Penatibus et magnis dis montes nascetur ridiculus mus.',
+                helper: 'explore our trends'
             }
         },
         {
@@ -105,7 +107,15 @@ CardDiscovery.defaultProps = {
         },
         {
             isImage: false,
-            isArticle: true
+            isArticle: false
+        },
+        {
+            isImage: false,
+            isArticle: false
+        },
+        {
+            isImage: false,
+            isArticle: false
         }
     ]
 }
