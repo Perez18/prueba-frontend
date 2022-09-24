@@ -1,7 +1,5 @@
 # PRUEBA FRONTEND NORTIX
 
-Proyecto creado por Anthony Perez
-
 ## Scripts
 
 En el directorio del proyecto, puede ejecutar:
