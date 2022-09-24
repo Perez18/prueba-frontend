@@ -10,13 +10,13 @@ import { CardShop } from './Components/CardShop'
 
 const Product = () => {
     return (
-        <Container>
+        <div className='product container'>
             <CardDiscovery />
             <br /><br /><br />
             <CardShop />
             <br /><br /><br />
             <CardLearnMore />
-        </Container>
+        </div>
     )
 }
 

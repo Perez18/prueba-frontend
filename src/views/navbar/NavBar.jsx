@@ -10,7 +10,7 @@ import IconLogo from 'src/assets/brand/logo.png';
 
 const NavBar = () => {
     return (
-        <Navbar collapseOnSelect expand="lg">
+        <Navbar collapseOnSelect expand="lg" className='app-header'>
             <Container>
                 <Navbar.Brand href="#concepts">
                     <Image src={IconLogo} alt='Logo' width={300} height={80} />

@@ -1,12 +1,15 @@
-const { render } = require("@testing-library/react")
+const { render, screen } = require("@testing-library/react")
 const { CardDiscovery } = require("./CardDiscovery")
 
 describe('Card Discovery', () => {
 
+    beforeAll(() => {
+        render(<CardDiscovery />)
+    })
+
     it('Render component', () => {
 
-        let component = render(<CardDiscovery />);
-        let element = component.getByText(/Discover your true style/i);
+        let element = screen.getByText(/Discover your true style/i);
 
         expect(element).toBeInTheDocument();
     })
