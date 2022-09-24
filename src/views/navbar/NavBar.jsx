@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // boostrap
 import { Image, Container, Nav, Navbar } from 'react-bootstrap';
@@ -9,11 +9,29 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import IconLogo from 'src/assets/brand/logo.png';
 
 const NavBar = () => {
+
+    useEffect(() => {
+
+        let elemNavBar = document.getElementById('navbar');
+
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > 170) {
+                elemNavBar.classList.add('sticky-top');
+                elemNavBar.classList.add('bg-white');
+            }else{
+                elemNavBar.classList.remove('sticky-top');
+                elemNavBar.classList.remove('bg-white');
+            }
+
+        })
+
+    }, [])
+
     return (
-        <Navbar collapseOnSelect expand="lg" className='app-header'>
+        <Navbar id="navbar" collapseOnSelect expand="lg" className='app-header'>
             <Container>
-                <Navbar.Brand href="#concepts">
-                    <Image src={IconLogo} alt='Logo' width={300} height={80} />
+                <Navbar.Brand href="#concepts" >
+                    <Image src={IconLogo} alt='Logo' width={300} height={80} fluid />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
