@@ -1,0 +1,71 @@
+#app-footer {
+    color: white;
+
+    .section-info {
+        background: $color-base;
+        padding: 20px;
+    }
+
+    .menu li {
+        display: inline-block;
+        padding-right: 15vh;
+    }
+
+    .menu li > a {
+        color: $color-celeste-light;
+        text-decoration: none !important;
+        font-weight: bold;
+    }
+
+    .contacto li,
+    .direccion li {
+        color: white;
+        padding: 0 !important;
+        list-style: none;
+    }
+
+    .contacto li .email{
+        color: $color-celeste-light;
+    }
+
+
+    .contacto li .All-rights{
+        font-size: 14px;
+    }
+
+    .section-redes {
+        background: $color-base-dark;
+        font-size: 13px;
+    }
+
+    .section-redes .redes {
+        margin: 13rem 0 3rem 0;
+    }
+
+    .section-redes .redes li {
+        display: inline-block;
+        margin-left: 4vh;
+
+        @include mobile {
+            margin-left: 2vh;
+        }
+    }
+
+    .redes a {
+        color: white; 
+        background: $color-base;
+        border-radius: 50%;
+        text-decoration: none;
+        padding: 2vh;
+    }
+
+    .redes a i {
+        transition: color 0.4s ease;
+        font-size: 1.1rem;
+        width: 20px;
+    }
+
+    .redes a:hover i {
+        color: rgb(176, 176, 176);
+    }
+}

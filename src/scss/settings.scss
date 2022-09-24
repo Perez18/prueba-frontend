@@ -1,0 +1,35 @@
+//responsive
+@mixin mobile {
+    @media only screen and (min-width: 200px) and (max-width: 767px)  {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 1025px) and (max-width: 1400px)  {
+        @content;
+    }
+}
+
+@mixin large {
+    @media only screen and (min-width: 1401px) and (max-width: 1900px)  {
+        @content;
+    }
+}
+
+//efecto
+
+@mixin zoom {
+    transform: scale(1.09);
+    transition-duration: 0.1s;
+}
+
+@mixin rounded {
+    border-radius: 25px !important;
+}

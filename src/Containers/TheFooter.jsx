@@ -14,32 +14,30 @@ const TheFooter = () => {
             <Container fluid>
                 <Row>
                     <Col md={8} className='section-info'>
-                        <div className='info-list'>
-                            <ul>
-                                <li>
-                                    <Link href="#">trends</Link>
-                                </li>
-                                <li>
-                                    <Link href="#">Collections</Link>
-                                </li>
-                                <li>
-                                    <Link href="#">tips & guides</Link>
-                                </li>
-                                <li>
-                                    <Link href="#">find a store</Link>
-                                </li>
-                                <li>
-                                    <Link href="#">careers</Link>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul className='menu'>
+                            <li>
+                                <Link href="#">trends</Link>
+                            </li>
+                            <li>
+                                <Link href="#">Collections</Link>
+                            </li>
+                            <li>
+                                <Link href="#">tips & guides</Link>
+                            </li>
+                            <li>
+                                <Link href="#">find a store</Link>
+                            </li>
+                            <li>
+                                <Link href="#">careers</Link>
+                            </li>
+                        </ul>
                         <Row>
-                            <Col className='info-contacto'>
-                                <ul>
+                            <Col>
+                                <ul className='contacto'>
                                     <li>tel: +(507) 314-7709</li>
                                     <li>fax: +(507) 314-7709</li>
                                     <li>
-                                        <a href='mailto:info@tiendaconceptslife.com'>
+                                        <a href='mailto:info@tiendaconceptslife.com' className='email'>
                                             info@tiendaconceptslife.com
                                         </a>
                                     </li>
@@ -47,12 +45,14 @@ const TheFooter = () => {
                                         <Image src={IconLogoWhite} alt='Logo' width={240} height={150} />
                                     </li>
                                     <li>
-                                        All rights reserved 2017 &copy; Tienda Concepts Life
+                                        <p className='All-rights'>
+                                            All rights reserved 2017 &copy; Tienda Concepts Life
+                                        </p>
                                     </li>
                                 </ul>
                             </Col>
-                            <Col className='info-direccion'>
-                                <ul>
+                            <Col>
+                                <ul className='direccion'>
                                     <li>Av. Republica de Brasil 303</li>
                                     <li>Panamá </li>
                                     <li>Panamá</li>
@@ -62,19 +62,25 @@ const TheFooter = () => {
 
                     </Col>
                     <Col md={4} className='section-redes'>
-                        <ul>
+                        <ul className='redes'>
                             <li>Follow us</li>
                             <li>
-                                <Icofont icon="twitter"  size="1" />
+                                <a href='https://twitter.com/conceptslife?lang=en' target='_blank'>
+                                    <Icofont icon="twitter" size="1" />
+                                </a>
                             </li>
                             <li>
-                                <Icofont icon="facebook"  size="1" />
+                                <a href='https://www.facebook.com/conceptslife/' target='_blank' >
+                                    <Icofont icon="facebook" size="1" />
+                                </a>
                             </li>
                             <li>
-                                <Icofont icon="instagram"  size="1" />
+                                <a href='https://www.instagram.com/concepts_life/' target='_blank'>
+                                    <Icofont icon="instagram" size="1" />
+                                </a>
                             </li>
                         </ul>
-                        <p>Created by Nessim Btesh and Michael Del Muro</p>
+                        <p className='text-center'>Created by Nessim Btesh and Michael Del Muro</p>
 
                     </Col>
                 </Row>
