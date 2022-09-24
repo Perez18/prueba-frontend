@@ -1,5 +1,4 @@
 import React from 'react'
-
 // components
 import Carousel from 'src/views/carousel/Carousel'
 import Product from 'src/views/product/Product'
@@ -9,6 +8,7 @@ const TheContent = () => {
   return (
     <div id='app-content'>
       <Carousel />
+      <br/> <br/>
       <Product />
       <br/><br/>
       <Found />

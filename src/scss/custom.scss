@@ -6,7 +6,11 @@
 
 // content
 @import 'components/TheContent/content';
+@import 'components/TheContent/carousel';
 @import 'components/TheContent/product';
 
 // Footer
 @import 'components/TheFooter/footer';
+
+// pages
+@import 'components/pages/page404';
