@@ -1,3 +1,9 @@
+.more {
+    font-weight: 500;
+    text-align: end;
+    letter-spacing: 1px;
+}
+
 // Card Discovert
 .card-discovery {
     .article {
@@ -5,35 +11,42 @@
         .title {
             font-weight: bold;
         }
-
-        .helper{
-            font-weight: 500;
-            text-align: end;
-            letter-spacing: 1px;
-        }
     }
 }
 
 // Card learMore
-.card-learMore{
-    .card{
+.card-learMore {
+    .card {
         margin-right: 5px;
     }
-    .card-title{
+    .card-title {
         font-size: 25px;
         letter-spacing: 1px;
         font-weight: bold;
     }
-    
-    .card-body{
+
+    .card-body {
         padding: 35px;
         background: $color-celeste-dark;
     }
 
-    .more{
-        font-weight: 500;
-        text-align: end;
-        letter-spacing: 1px;
+}
+
+//Card Shop
+.card-shop {
+    display: flex;
+    
+    .image{
+        width: 65%;
+        background: gray;
     }
 
+    .article{
+        width: 35%;
+        padding: 30px;
+        background: #f0fff0;
+        h1,h2,h3{
+            font-weight: bold;
+        }
+    }
 }

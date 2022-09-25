@@ -44,7 +44,7 @@ export const CardDiscovery = ({
                                         <div className='article'>
                                             <h3 className='title'>{article?.title}</h3>
                                             <p className='text'>{article?.text}</p>
-                                            <p className='helper'>{article?.helper} <FontAwesomeIcon icon={faArrowRight} /> </p>
+                                            <p className='more'>{article?.helper} <FontAwesomeIcon icon={faArrowRight} /> </p>
                                         </div>
                                     )
 

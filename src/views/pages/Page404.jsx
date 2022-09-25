@@ -11,9 +11,7 @@ const Page404 = () => {
 
       <div className="content-404 text-center">
         <p>La pagina que buscas no esta disponible!</p>
-        <button>
           <Link to="/" className="link-404">Ir al inicio</Link>
-        </button>
       </div>
     </div>
   )

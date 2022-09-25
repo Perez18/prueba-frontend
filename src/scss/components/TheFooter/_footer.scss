@@ -36,11 +36,13 @@
     .section-redes {
         background: $color-base-dark;
         font-size: 13px;
+        display: flex;
+        flex-direction: column;
     }
 
-    .section-redes .redes {
-        margin: 13rem 0 3rem 0;
-    }
+    // .section-redes .redes {
+    //     margin: 13rem 0 3rem 0;
+    // }
 
     .section-redes .redes li {
         display: inline-block;

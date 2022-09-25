@@ -4,21 +4,19 @@
         width: 100%;
     }
 
-    // .four_zero_four_bg {
-    //     background-image: url(https://i0.wp.com/www.silocreativo.com/en/wp-content/uploads/2017/11/diseno-web-404-CSS.gif?resize=600%2C323&quality=100&strip=all&ssl=1);
-    //     height: 75vh;
-    //     background-position: center;
-    // }
-
     h1,
     h3 {
         font-size: 80px;
     }
 
     .link-404 {
-        text-decoration: none;
-        color: #fff !important;
         display: inline-block;
+        border: 1px solid $color-almond;
+        border-radius: 10px;
+        background: $color-almond;
+        text-decoration: none;
+        padding: 10px;
+        color: rgb(98, 96, 96);
     }
 
     .content-404 {
