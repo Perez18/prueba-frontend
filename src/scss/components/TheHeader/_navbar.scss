@@ -1,0 +1,17 @@
+.navbar {
+    background: linear-gradient(
+        to right,
+        rgb(255, 255, 255) 0%,
+        rgb(255, 255, 255) 68.6%,
+        $color-almond 50%,
+        $color-almond 100%
+    );
+
+ 
+
+    .navbar-nav {
+        a {
+            font-weight: bold;
+        }
+    }
+}

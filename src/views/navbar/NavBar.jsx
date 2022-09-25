@@ -30,7 +30,7 @@ const NavBar = () => {
     return (
         <Navbar id="navbar" collapseOnSelect expand="lg" className='app-header'>
             <Container>
-                <Navbar.Brand href="#concepts" >
+                <Navbar.Brand>
                     <Image src={IconLogo} alt='Logo' width={300} height={80} fluid />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

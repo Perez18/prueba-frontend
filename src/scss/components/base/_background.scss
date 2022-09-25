@@ -1,11 +1,15 @@
 .bg-yellow {
-    background: $color-yellow;
+    background: $color-yellow !important;
 }
 
 .bg-yellow-light {
-    background: $color-yellow-light;
+    background: $color-yellow-light !important;
 }
 
 .bg-almond {
-    background: $color-almond;
+    background: $color-almond !important;
+}
+
+.bg-white{
+    background: white !important;
 }
