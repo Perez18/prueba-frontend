@@ -1,5 +1,5 @@
-const { render, screen } = require("@testing-library/react")
-const { CardDiscovery } = require("./CardDiscovery")
+import { render, screen } from '@testing-library/react';
+import CardDiscovery from './CardDiscovery';
 
 describe('Card Discovery', () => {
 

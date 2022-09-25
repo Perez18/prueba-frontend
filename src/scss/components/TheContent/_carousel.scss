@@ -1,12 +1,107 @@
 .carousel {
     .banner {
-        background-size: cover;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
-        width: 100vh;
-        height: 60vh;
+        width: 150vh;
+        height: 80vh;
+
+        @include mobile {
+            background-size: contain;
+            width: 90vh;
+            height: 50vh;
+        }
     }
 
     .banner-one {
-        background-image: url(#{$assetsPath}/images/muebles.webp);
+        background-image: url(#{$assetsPath}/images/bannerone.webp);
+    }
+
+    .banner-two {
+        background-image: url(#{$assetsPath}/images/bannertwo.webp);
+    }
+
+    .card {
+        position: absolute;
+        top: 30%;
+        right: 15%;
+        width: 30rem;
+        padding: 10px;
+        background: $color-yellow-light;
+        border: 0px;
+        border-radius: 0px;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-size: 45px;
+        }
+
+        .card-text {
+            font-size: 13px;
+        }
+
+        .more {
+            font-weight: 500;
+            text-align: end;
+            letter-spacing: 1px;
+        }
+
+        @include mobile {
+            width: 15rem;
+            top: 5%;
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                font-size: 18px;
+            }
+
+            .card-text {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // Botones de next/prev
+    .owl-nav {
+        display: flex;
+        position: absolute;
+        top: 85%;
+        right: 27.5%;
+        gap: 55px;
+        .a {
+            cursor: pointer;
+            &:before {
+                content: ">";
+                font-weight: 400;
+                font-size: 35px;
+            }
+        }
+
+        .n {
+            cursor: pointer;
+            &:before {
+                content: "<";
+                font-weight: 400;
+                font-size: 35px;
+            }
+        }
+
+
+        @include mobile {
+            gap: 10px;
+            top: 80%;
+            right: 0;
+            .a , .n{
+                font-weight: bold;
+            }
+        }
+
+        @include largeFull{
+            top: 80%;
+            right: 24%;
+        }
     }
 }

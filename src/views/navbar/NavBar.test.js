@@ -1,5 +1,5 @@
-const { render, screen } = require("@testing-library/react")
-const { default: NavBar } = require("./NavBar")
+import { render, screen } from '@testing-library/react';
+import NavBar from './NavBar'
 
 describe('Component Navbar', () => {
 
