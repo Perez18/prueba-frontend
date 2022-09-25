@@ -1,5 +1,5 @@
 import React from 'react'
-// components
+// views
 import Carousel from 'src/views/carousel/Carousel'
 import Product from 'src/views/product/Product'
 import Found from 'src/views/found/Found'

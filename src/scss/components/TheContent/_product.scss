@@ -29,23 +29,27 @@
         padding: 35px;
         background: $color-celeste-dark;
     }
-
 }
 
 //Card Shop
 .card-shop {
-    display: flex;
-    
-    .image{
-        width: 65%;
-        background: gray;
+    .image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background: url(#{$assetsPath}/images/shop.webp);
+        width: 100%;
+        height: 49vh;
+        @include mobile {
+            height: 50vh;
+        }
     }
 
-    .article{
-        width: 35%;
+    .article {
         padding: 30px;
         background: #f0fff0;
-        h1,h2,h3{
+        h1,
+        h2,
+        h3 {
             font-weight: bold;
         }
     }

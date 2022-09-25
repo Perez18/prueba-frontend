@@ -71,7 +71,7 @@
         top: 85%;
         right: 27.5%;
         gap: 55px;
-        .a {
+        .next {
             cursor: pointer;
             &:before {
                 content: ">";
@@ -80,7 +80,7 @@
             }
         }
 
-        .n {
+        .prev {
             cursor: pointer;
             &:before {
                 content: "<";

@@ -1,14 +1,17 @@
 import React from 'react'
 
+// boostrap
+import { Card } from 'react-bootstrap';
+
 // carousel
 import OwlCarousel from "react-owl-carousel3";
 
-// protypes
-import PropTypes from 'prop-types'
-import { Card } from 'react-bootstrap';
+// img/icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-// import { Col, Container, Row } from 'react-bootstrap';
+
+// protypes
+import PropTypes from 'prop-types'
 
 const Carousel = ({
   bannerData
@@ -27,7 +30,7 @@ const Carousel = ({
         autoplaySpeed={1000}
         loop={true}
         nav={true}
-        navClass='navIcon'
+        navClass={['prev','next']}
         navText={['','']}
         dotsContainer={".owl-thumbs"}
       >

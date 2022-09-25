@@ -36,8 +36,8 @@
     .section-redes {
         background: $color-base-dark;
         font-size: 13px;
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
     }
 
     // .section-redes .redes {
@@ -49,6 +49,7 @@
         margin-left: 4vh;
 
         @include mobile {
+            padding-top: 15px;
             margin-left: 2vh;
         }
     }
