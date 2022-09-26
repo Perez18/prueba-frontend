@@ -1,17 +1,21 @@
-# PRUEBA FRONTEND NORTIX
+# Template Frontend
+Template creado con [React js](https://reactjs.org/)   🛠️
 
-## Scripts
+## Uso
 
-En el directorio del proyecto, puede ejecutar:
-### `npm start`
+ ```Bash
+ # Instalacion de las dependencias
+npm i install
 
-Abrir [http://localhost:3000](http://localhost:3000) en tu navegador
+# Abrir http://localhost:3000 en tu navegador
 
+```
 
-### `npm test`
-Modo de testeo
-
-
-### `npm run build`
-
-Construye la aplicación para producción en la carpeta `build`.\
+## Modo de testeo
+```Bash
+ npm test nombre-de-archivo
+```
+## Produccion
+```bash
+npm run build
+```
