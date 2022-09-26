@@ -10,18 +10,10 @@ export const CardShop = () => {
   return (
     <div className='card-shop'>
       <Row>
-        <Col
-          sm={6}
-          md={4}
-          lg={8}
-          className='p-0'>
+        <Col sm={6} md={4} lg={8} className='p-0'>
           <div className='image'></div>
         </Col>
-        <Col
-          sm={6}
-          md={4}
-          lg={4}
-          className='article'>
+        <Col sm={6} md={4} lg={4} className='article'>
           <h2>Shop anything</h2>
           <h2>and everything</h2>
           <p>

@@ -18,12 +18,7 @@ export const CardDiscovery = ({
             <Row>
                 {
                     imageData.map(({ src, alt, isImage, isArticle, article }, index) => (
-                        <Col
-                            key={index}
-                            sm={6}
-                            md={4}
-                            lg={3}
-                            className='content'
+                        <Col key={index} sm={6} md={4} lg={3} className='content'
                         >
                             {
                                 isImage
@@ -32,7 +27,6 @@ export const CardDiscovery = ({
                                         src={src}
                                         alt={alt}
                                         className='image'
-                                        // fluid
                                     />
                                 )
                             }

@@ -64,26 +64,27 @@ const TheFooter = () => {
 
                     </Col>
                     <Col md={4} className='section-redes'>
-                        <ul className='redes'>
-                            <li>Follow us</li>
-                            <li>
-                                <a href='https://twitter.com/conceptslife?lang=en' target='_blank'  rel="noreferrer">
-                                    <Icofont icon="twitter" size="1" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href='https://www.facebook.com/conceptslife/' target='_blank'  rel="noreferrer" >
-                                    <Icofont icon="facebook" size="1" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href='https://www.instagram.com/concepts_life/' target='_blank'  rel="noreferrer">
-                                    <Icofont icon="instagram" size="1" />
-                                </a>
-                            </li>
-                        </ul>
-                        <p className='text-center'>Created by Nessim Btesh and Michael Del Muro</p>
-
+                        <div className='redes'>
+                            <ul>
+                                <li>Follow us</li>
+                                <li>
+                                    <a href='https://twitter.com/conceptslife?lang=en' target='_blank' rel="noreferrer">
+                                        <Icofont icon="twitter" size="1" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://www.facebook.com/conceptslife/' target='_blank' rel="noreferrer" >
+                                        <Icofont icon="facebook" size="1" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://www.instagram.com/concepts_life/' target='_blank' rel="noreferrer">
+                                        <Icofont icon="instagram" size="1" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <p className='text-center'>Created by Nessim Btesh and Michael Del Muro</p>
+                        </div>
                     </Col>
                 </Row>
 
