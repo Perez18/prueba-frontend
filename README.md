@@ -1,21 +1,17 @@
 # Template Frontend
-Template creado con [React js](https://reactjs.org/)   🛠️
 
-## Uso
-
+## Instalacion de la dependencias
  ```Bash
  # Instalacion de las dependencias
 npm i install
-
-# Abrir http://localhost:3000 en tu navegador
-
 ```
+Abrir http://localhost:3000 en tu navegador
 
 ## Modo de testeo
 ```Bash
  npm test nombre-de-archivo
 ```
-## Produccion
+## Build para produccion
 ```bash
 npm run build
 ```
