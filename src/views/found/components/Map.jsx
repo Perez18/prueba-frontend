@@ -1,36 +1,13 @@
 import React from 'react'
-import { Image } from 'react-bootstrap'
-
-import { Map as MapGL } from 'react-map-gl';
-
-// import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps'
-// import map from 'src/assets/images/mapmax.png'
-// const MapDefault = () => {
-//     return (
-//         <GoogleMap
-//             defaultZoom={10}
-//             defaultCenter={{ lat: 8.983333,lng: -79.516670 }}
-//         />
-//     )
-// }
-
-// const Wrapped = withScriptjs(withGoogleMap(MapDefault));
-
+import { Map as MapPigeon, Marker } from "pigeon-maps"
 
 const Map = () => {
 
     return (
-        <div style={{ width: '100vh', height: '70vh' }}>
-            <MapGL
-                initialViewState={{
-                    longitude: -100,
-                    latitude: 40,
-                    zoom: 3.5
-                }}
-                style={{ width: 600, height: 400 }}
-                mapStyle="mapbox://styles/mapbox/streets-v9"
-                mapboxAccessToken='1'
-            />;
+        <div className='content-map'>
+            <MapPigeon height={310} defaultCenter={[9.01253333,-79.48262856592007]} defaultZoom={15}>
+                <Marker width={50} anchor={[9.012586045626406, -79.48262856592007]} />
+            </MapPigeon>
         </div>
     )
 }
