@@ -1,8 +1,8 @@
 import React from 'react'
-import { Col, Container, Image, Row } from 'react-bootstrap'
+import { Col, Image, Row } from 'react-bootstrap'
 
 // image/icon
-import mesacopas from 'src/assets/images/mesacopas2.webp'
+import mesacopas from 'src/assets/images/mesascopas.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -46,7 +46,7 @@ export const CardDiscovery = ({
                             {
                                 (!isImage && !isArticle)
                                 && (
-                                    <div className='d-block bg-block-gray'></div>
+                                    <div className='bg-block-gray'></div>
                                 )
                             }
                         </Col>
@@ -71,7 +71,7 @@ CardDiscovery.defaultProps = {
             article: {
                 background: 'bg-yellow-light',
                 title: 'Discover your true style',
-                text: 'Penatibus et magnis dis montes nascetur ridiculus mus. Magna nulla quis aliqua duis aliqua consectetur.',
+                text: 'Penatibus et magnis dis montes nascetur ridiculus mus. Magna nulla quis aliqua duis.',
                 helper: 'explore our trends'
             }
         },

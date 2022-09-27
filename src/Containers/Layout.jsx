@@ -1,7 +1,7 @@
 import React from 'react'
+import TheHeader from './TheHeader'
 import TheContent from './TheContent'
 import TheFooter from './TheFooter'
-import TheHeader from './TheHeader'
 
 const Layout = () => {
   return (

@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 // boostrap
 import { Image, Container, Nav, Navbar } from 'react-bootstrap';
 
-// images
+// img/icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import IconLogo from 'src/assets/brand/logo.png';
@@ -18,7 +18,7 @@ const NavBar = () => {
             if (window.scrollY > 170) {
                 elemNavBar.classList.add('sticky-top');
                 elemNavBar.classList.add('bg-white');
-            }else{
+            } else {
                 elemNavBar.classList.remove('sticky-top');
                 elemNavBar.classList.remove('bg-white');
             }
@@ -36,15 +36,13 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#features">trends</Nav.Link>
-                        <Nav.Link href="#pricing">collections</Nav.Link>
-                        <Nav.Link href="#pricing">tips & guides</Nav.Link>
+                        <Nav.Link href="#trends">trends</Nav.Link>
+                        <Nav.Link href="#collections">collections</Nav.Link>
+                        <Nav.Link href="#tips&guides">tips & guides</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">Find a store</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Contact us
-                        </Nav.Link>
+                        <Nav.Link href="#findastrore">Find a store</Nav.Link>
+                        <Nav.Link eventKey={2} href="#Contactus">Contact us</Nav.Link>
                         <Nav.Link>
                             <FontAwesomeIcon icon={faSearch} transform={{ rotate: 90 }} />
                         </Nav.Link>

@@ -77,7 +77,7 @@ Carousel.defaultProps = {
       bgColor: 'bg-almond',
       card: {
         title: 'Retro: Old is New Again',
-        text: 'dolor sit amet, consectetur adipiscing elit. In feugiat odio id rhoncus semper. Aliquam aliquet lacinia sollicitudin. Pellentesque non porttitor diam. ',
+        text: 'Dolor sit amet, consectetur adipiscing elit. In feugiat odio id rhoncus semper. Aliquam aliquet lacinia sollicitudin. Pellentesque non porttitor diam. ',
         more: 'discovery this trend '
       }
 
