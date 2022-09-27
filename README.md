@@ -5,6 +5,10 @@
  # Instalacion de las dependencias
 npm i install
 ```
+
+ ```Bash
+npm start
+```
 Abrir http://localhost:3000 en tu navegador
 
 ## Modo de testeo
