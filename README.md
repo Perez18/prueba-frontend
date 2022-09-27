@@ -3,7 +3,7 @@
 ## Instalacion de la dependencias
  ```Bash
  # Instalacion de las dependencias
-npm i install
+npm i
 ```
 
  ```Bash
