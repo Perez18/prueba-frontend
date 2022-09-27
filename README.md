@@ -7,6 +7,7 @@ npm i install
 ```
 
  ```Bash
+ #inicializar proyecto
 npm start
 ```
 Abrir http://localhost:3000 en tu navegador
