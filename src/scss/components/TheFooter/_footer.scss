@@ -45,6 +45,10 @@
         display: inline-block;
         margin-left: 4vh;
 
+        @include tablet{
+            margin-left: 0vh;
+        }
+
         @include mobile {
             padding-top: 15px;
             margin-left: 2vh;

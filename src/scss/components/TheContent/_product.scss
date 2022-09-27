@@ -50,7 +50,11 @@ p{
         min-height: 65vh;
 
         @include mobile {
-            height: 50vh;
+            min-height: 50vh;
+        }
+
+        @include tablet{
+            min-height: 38vh;
         }
 
         @include large{

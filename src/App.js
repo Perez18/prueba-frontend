@@ -1,4 +1,3 @@
-// import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './containers/Layout';
 import Page404 from './views/pages/Page404';
