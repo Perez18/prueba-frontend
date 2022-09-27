@@ -74,7 +74,7 @@ Carousel.defaultProps = {
   bannerData: [
     {
       bgClass: 'banner banner-one',
-      bgColor: 'bg-almond',
+      bgColor: 'bg-pink-light',
       card: {
         title: 'Retro: Old is New Again',
         text: 'Dolor sit amet, consectetur adipiscing elit. In feugiat odio id rhoncus semper. Aliquam aliquet lacinia sollicitudin. Pellentesque non porttitor diam. ',
