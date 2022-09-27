@@ -1,5 +1,4 @@
 import React from 'react'
-
 // boostrap
 import { Col, Container, Row, Image } from 'react-bootstrap'
 
