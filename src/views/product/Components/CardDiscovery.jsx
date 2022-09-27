@@ -80,10 +80,9 @@ CardDiscovery.defaultProps = {
             isArticle: false
         },
         {
-            src: mesacopas,
-            alt: 'Image',
             isImage: true,
-            isArticle: false
+            src: mesacopas,
+            alt: 'Image'
         },
         {
             isImage: false,
